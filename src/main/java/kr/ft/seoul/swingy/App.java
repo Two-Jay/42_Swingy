@@ -1,13 +1,11 @@
 package kr.ft.seoul.swingy;
 
-/**
- * Hello world!
- *
- */
+import kr.ft.seoul.swingy.View.ViewManager;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        ViewManager viewManager = new ViewManager();
     }
 }
