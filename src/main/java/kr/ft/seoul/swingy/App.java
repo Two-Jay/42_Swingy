@@ -6,6 +6,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        ViewManager viewManager = new ViewManager();
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                ViewManager viewManager = new ViewManager();
+            }
+        });
     }
 }
