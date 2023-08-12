@@ -19,6 +19,7 @@ public class WelcomePhaseScreen extends BaseScreen {
 
     public void setup() {
         System.out.println("WelcomePhaseScreen");
+        this.initCommands();
 
         JPanel buttonPanel = new JPanel(new GridLayout(3, 1));
         buttonPanel.setSize(new Dimension(100, 150));
@@ -27,30 +28,41 @@ public class WelcomePhaseScreen extends BaseScreen {
         JButton startButton = new JButton("Start");
         startButton.setBounds(100, 100, 100, 50);
         startButton.addActionListener(e -> {
-            System.out.println("Start Button Clicked");
-            ScreenLoader.getInstance().load("CreateHeroPhase");
+            commands.get("Start").execute();
         });
         buttonPanel.add(startButton);
 
         JButton loadButton = new JButton("Load");
         loadButton.setBounds(100, 200, 100, 50);
         loadButton.addActionListener(e -> {
-            System.out.println("Load Button Clicked");
+            commands.get("Load").execute();
         });
         buttonPanel.add(loadButton);
 
         JButton exitButton = new JButton("Exit");
         exitButton.setBounds(100, 300, 100, 50);
-        Command exitCommand = new ScreenCommand("Exit", e -> {
-            System.out.println("Exit Button Clicked");
-            System.exit(0);
+        exitButton.addActionListener(e -> {
+            commands.get("Exit").execute();
         });
-        commands.put("Exit", exitCommand);
         buttonPanel.add(exitButton);
 
         JLabel label = new JLabel();
         label.setBounds(0, 0, 800, 600);
         label.add(buttonPanel);
         addComponent(label);
+    }
+
+    private void initCommands() {
+        commands.put("Exit", new ScreenCommand("Exit", e -> {
+            System.out.println("Exit Button Clicked");
+            System.exit(0);
+        }));
+        commands.put("Start", new ScreenCommand("Start", e -> {
+            System.out.println("Start Button Clicked");
+            ScreenLoader.getInstance().load("CreateHeroPhase");
+        }));
+        commands.put("Load", new ScreenCommand("Load", e -> {
+            System.out.println("Load Button Clicked");
+        }));
     }
 }

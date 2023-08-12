@@ -2,7 +2,8 @@ package kr.seoul.ftseoul.swingy;
 
 import javax.swing.SwingUtilities;
 
-import kr.seoul.ftseoul.swingy.view.WindowView.*;
+import kr.seoul.ftseoul.swingy.View.WindowView.WindowFrame;
+import kr.seoul.ftseoul.swingy.View.WindowView.WindowView;
 
 class RunnableView implements Runnable {
     private void create() {
