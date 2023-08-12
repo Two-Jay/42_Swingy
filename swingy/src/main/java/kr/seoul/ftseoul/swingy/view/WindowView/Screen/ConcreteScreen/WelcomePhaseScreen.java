@@ -1,6 +1,7 @@
 package kr.seoul.ftseoul.swingy.view.WindowView.Screen.ConcreteScreen;
 
 import kr.seoul.ftseoul.swingy.view.WindowView.Screen.BaseScreen;
+import kr.seoul.ftseoul.swingy.view.WindowView.Screen.ScreenLoader;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -21,6 +22,7 @@ public class WelcomePhaseScreen extends BaseScreen {
         startButton.setBounds(100, 100, 100, 50);
         startButton.addActionListener(e -> {
             System.out.println("Start Button Clicked");
+            ScreenLoader.getInstance().load("CreateHeroPhase");
         });
         buttonPanel.add(startButton);
 

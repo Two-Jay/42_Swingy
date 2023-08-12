@@ -3,13 +3,13 @@ package kr.seoul.ftseoul.swingy.view.WindowView;
 import javax.swing.JFrame;
 
 import kr.seoul.ftseoul.swingy.view.WindowView.Screen.ScreenLoader;
-import kr.seoul.ftseoul.swingy.view.WindowView.Screen.ConcreteScreen.WelcomePhaseScreen;
 
 public class WindowFrame extends JFrame {
-    private ScreenLoader screenLoader = new ScreenLoader(this);
+    private ScreenLoader screenLoader = ScreenLoader.getInstance();
 
     public WindowFrame() {
-        screenLoader.load(new WelcomePhaseScreen());
+        screenLoader.setFrame(this);
+        screenLoader.load("WelcomePhase");
         basicSetup();
     }
 
