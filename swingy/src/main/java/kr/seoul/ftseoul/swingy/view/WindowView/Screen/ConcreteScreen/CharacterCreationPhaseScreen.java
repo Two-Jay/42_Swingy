@@ -1,11 +1,11 @@
-package kr.seoul.ftseoul.swingy.view.WindowView.Screen.ConcreteScreen;
+package kr.seoul.ftseoul.swingy.View.WindowView.Screen.ConcreteScreen;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import kr.seoul.ftseoul.swingy.view.WindowView.Screen.BaseScreen;
-import kr.seoul.ftseoul.swingy.view.WindowView.Screen.ScreenLoader;
+import kr.seoul.ftseoul.swingy.View.WindowView.Screen.BaseScreen;
+import kr.seoul.ftseoul.swingy.View.WindowView.Screen.ScreenLoader;
 
 import java.awt.Dimension;
 import java.awt.GridLayout;

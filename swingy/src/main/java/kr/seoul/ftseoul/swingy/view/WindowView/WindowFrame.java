@@ -1,8 +1,8 @@
-package kr.seoul.ftseoul.swingy.view.WindowView;
+package kr.seoul.ftseoul.swingy.View.WindowView;
 
 import javax.swing.JFrame;
 
-import kr.seoul.ftseoul.swingy.view.WindowView.Screen.ScreenLoader;
+import kr.seoul.ftseoul.swingy.View.WindowView.Screen.ScreenLoader;
 
 public class WindowFrame extends JFrame {
     private ScreenLoader screenLoader = ScreenLoader.getInstance();

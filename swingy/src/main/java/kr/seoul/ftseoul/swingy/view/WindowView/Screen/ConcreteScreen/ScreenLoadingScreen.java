@@ -1,7 +1,8 @@
-package kr.seoul.ftseoul.swingy.view.WindowView.Screen.ConcreteScreen;
+package kr.seoul.ftseoul.swingy.View.WindowView.Screen.ConcreteScreen;
 
 import javax.swing.JFormattedTextField;
-import kr.seoul.ftseoul.swingy.view.WindowView.Screen.BaseScreen;
+
+import kr.seoul.ftseoul.swingy.View.WindowView.Screen.BaseScreen;
 
 public class ScreenLoadingScreen extends BaseScreen {
     public void setup() {

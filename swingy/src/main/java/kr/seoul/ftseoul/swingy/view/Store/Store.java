@@ -1,4 +1,4 @@
-package kr.seoul.ftseoul.swingy.view.store;
+package kr.seoul.ftseoul.swingy.View.Store;
 
 public interface Store {
 

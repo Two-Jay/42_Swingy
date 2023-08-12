@@ -1,4 +1,4 @@
-package kr.seoul.ftseoul.swingy.view.store;
+package kr.seoul.ftseoul.swingy.View.Store;
 
 import java.util.HashMap;
 

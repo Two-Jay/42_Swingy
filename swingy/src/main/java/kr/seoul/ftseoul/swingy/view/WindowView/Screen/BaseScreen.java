@@ -1,4 +1,4 @@
-package kr.seoul.ftseoul.swingy.view.WindowView.Screen;
+package kr.seoul.ftseoul.swingy.View.WindowView.Screen;
 
 import javax.swing.JComponent;
 

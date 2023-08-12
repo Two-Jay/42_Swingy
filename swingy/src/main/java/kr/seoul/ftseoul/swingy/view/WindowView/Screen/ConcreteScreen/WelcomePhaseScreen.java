@@ -1,16 +1,22 @@
-package kr.seoul.ftseoul.swingy.view.WindowView.Screen.ConcreteScreen;
-
-import kr.seoul.ftseoul.swingy.view.WindowView.Screen.BaseScreen;
-import kr.seoul.ftseoul.swingy.view.WindowView.Screen.ScreenLoader;
+package kr.seoul.ftseoul.swingy.View.WindowView.Screen.ConcreteScreen;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import kr.seoul.ftseoul.swingy.View.Command.Command;
+import kr.seoul.ftseoul.swingy.View.Command.ScreenCommand;
+import kr.seoul.ftseoul.swingy.View.WindowView.Screen.BaseScreen;
+import kr.seoul.ftseoul.swingy.View.WindowView.Screen.ScreenLoader;
+
+import java.util.HashMap;
+
 import java.awt.Dimension;
 import java.awt.GridLayout;
 
 public class WelcomePhaseScreen extends BaseScreen {
+    private HashMap<String, Command> commands = new HashMap<String, Command>();
+
     public void setup() {
         System.out.println("WelcomePhaseScreen");
 
@@ -35,10 +41,11 @@ public class WelcomePhaseScreen extends BaseScreen {
 
         JButton exitButton = new JButton("Exit");
         exitButton.setBounds(100, 300, 100, 50);
-        exitButton.addActionListener(e -> {
+        Command exitCommand = new ScreenCommand("Exit", e -> {
             System.out.println("Exit Button Clicked");
             System.exit(0);
         });
+        commands.put("Exit", exitCommand);
         buttonPanel.add(exitButton);
 
         JLabel label = new JLabel();

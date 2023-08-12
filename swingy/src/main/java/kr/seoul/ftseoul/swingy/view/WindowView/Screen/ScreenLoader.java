@@ -1,11 +1,11 @@
-package kr.seoul.ftseoul.swingy.view.WindowView.Screen;
+package kr.seoul.ftseoul.swingy.View.WindowView.Screen;
 
 import java.util.List;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
-import kr.seoul.ftseoul.swingy.view.WindowView.Screen.ConcreteScreen.CharacterCreationPhaseScreen;
-import kr.seoul.ftseoul.swingy.view.WindowView.Screen.ConcreteScreen.WelcomePhaseScreen;
+import kr.seoul.ftseoul.swingy.View.WindowView.Screen.ConcreteScreen.CharacterCreationPhaseScreen;
+import kr.seoul.ftseoul.swingy.View.WindowView.Screen.ConcreteScreen.WelcomePhaseScreen;
 
 import java.util.HashMap;
 

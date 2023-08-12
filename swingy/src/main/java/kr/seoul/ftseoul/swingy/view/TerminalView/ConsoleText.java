@@ -1,4 +1,4 @@
-package kr.seoul.ftseoul.swingy.view.TerminalView;
+package kr.seoul.ftseoul.swingy.View.TerminalView;
 
 public interface ConsoleText {
     public String toString();
